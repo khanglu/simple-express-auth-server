@@ -1,0 +1,1 @@
+Simple authentication server using Express and JWT
