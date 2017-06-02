@@ -13,7 +13,6 @@ const userSchema = new Schema({
 userSchema.pre("save", function(next) {
   // get access to the user model
   const user = this; // user.email, user.password
-  console.log(this);
   // generate a salt then run callback
   bcrypt.genSalt(10, (err, salt) => {
     if (err) {
